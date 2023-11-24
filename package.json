@@ -1,0 +1,31 @@
+{
+  "name": "mobile-ecom-furniture",
+  "version": "1.0.0",
+  "description": "MongoDB, ExpressJS, React-Native, and NodeJS application",
+  "main": "backend/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "SET NODE_ENV=DEVELOPMENT& nodemon backend/server",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": "https://github.com/MAbdurahman/mobile-ecom-furniture.git",
+  "author": "Mahdi Abdurrahman <mdbdrrhm@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^6.7.2",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.8.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
